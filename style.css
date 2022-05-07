@@ -1,0 +1,122 @@
+*{/* ATT: pas oublier search bar*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;/*to align blocks with more than 50% in total of width and height per one*/
+}
+body{
+    font-family:'poppins', serif;
+    background: url('images/laptop_other_small.jpg') no-repeat;
+    background-size:100% 60%;/*background-size:cover; pour couvrir toute la page*/ 
+    background-position: top;
+
+}
+header{
+    position: sticky;
+    top: 0px;/* pour que le header marche while scrolling */
+    background-color:coral;
+    color: white;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;/* #align-content ?? */
+    justify-content: space-between;
+    box-shadow:0 10px 15px rgba(0, 0, 0, 0.6);
+    height: 70px;/*La hauteur du navbar*/
+}
+#menu{
+    display: none;
+}
+#navbar{
+    display: flex;/* things to be in one line */
+    align-items: center;/* use this property to align the items vertically*/
+    justify-content: center;/* this aligns the flexible's items when the items don't 
+    use all available space on the main axis(horizontally)*/
+    color: white;
+    
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+#navbar li a:hover{/* when we'll put the mouse on the word*/
+    color: rgb(255, 234, 0);
+
+}
+#search{
+    border-radius: 5px;
+    width: 330px;
+    height: 30px;
+}
+#loop{
+    height: 25px;
+    width: 23px;
+    padding-left: 5px;
+}
+#search_bar{
+    display: flex;
+    align-items: center;
+    
+}
+/* #cancel{
+    display: none;
+} */
+footer{
+    background-color: coral;
+    margin-top: 100%;
+    height: 40px;
+}
+#copyright{
+    height: 27px;
+    width: 23px;
+}
+#copy{ 
+     /*text-align: center;
+     padding-top: 5px;=>to be in center because we don't have flexible's items here*/
+     /*so we can't use thes properties: justify-content: center; 
+                                        align-content: center;  */
+    display: flex;
+    /* align-items: center; ne fonctionne pas!! */
+    justify-content: center;
+    padding-top: 5px;
+    
+} 
+#total_nav{
+
+}
+@media(max-width: 1200px){  /* ipad mode */
+    #total_nav{
+        /*display:none;*/
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;/* to keep the order */
+        justify-content: flex-start;/*??*/
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40%;
+        width: 200px;
+        background-color: rgb(252, 159, 125);
+        padding: 30px;
+    }
+    
+    footer h3{
+        font-size: 16px;
+    }
+    #copyright{
+        height: 22px;
+        width: 18px;
+    }
+    #copy{
+        padding-top: 7px;/* pour etre au centre */
+    }
+    /* #cancel{
+        display: initial;
+    } */
+
+}
+
+ 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Dyalna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons/laptop_logo.ico" type="site" id="E-commerce"/>
+
+
+</head>
+<body>
+    <header>
+        <h1><strong id="logo">Team Dyalna</strong></h1>
+        <div id="search_bar"><!--pour etre un seul bloc-->
+            <input type="search" id="search" value="" placeholder="  chercher une page, une catégorie ou un produit" onchange="ouvrirPage()">
+            <img id="loop" src="icons/search.ico" alt="search">
+        </div>
+        <script>/* how to seperate between js and html ?? */ 
+            function ouvrirPage(){
+                var a = document.getElementById("search").value;
+                if(a==="acceuil_kawtar"){
+                    window.open("index_kawtar.html");
+                }
+            }
+        </script>
+        <div id="menu"><!-- <p> </p> ??-->
+            <img src="icons/menu.ico" alt="menu_icon">
+        </div>
+        <div id="total_nav">
+                <img id="cancel" src="icons/barre.svg" alt="cancel" width="22px">
+                <ul id="navbar">
+                    <li><a href="index.html"><strong>Accueil</strong></a></li>
+                    <li><a href="#"><strong>About</strong></a></li>
+                    <li><a href="#"><strong>Cart</strong></a></li>
+                    <li><a href="#"><strong>Log in</strong></a></li>
+                </ul>
+        </div>
+    </header>
+    <div id="background_image"></div> <!--probleeem-->
+    <footer>
+        <div id="copy">
+            <img id="copyright" src="icons/-copyright_90662.ico" alt="copyright"> 
+            <h3>Team Dyalna 2022, All Rights Reserved</h3> <!--à faire: ajout de l'icone de rights-->
+        </div>
+    </footer>
+</body>
+</html>
