@@ -1,0 +1,263 @@
+* {
+    /* ATT: pas oublier search bar*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*toalign blocks with more than 50% in total of width and height per one*/
+}
+
+body {
+    font-family: 'poppins', serif;
+    background: url('images/laptop_other_small.jpg') no-repeat;
+    background-size: cover;
+    /*background-size:cover; pour couvrir toute la page*/
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    /*pour que le header marche while scrolling */
+    background-color: rgb(198, 67, 20);
+    color: white;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    /* #align-content ?? */
+    justify-content: space-between;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+    height: 70px;
+    /*La hauteur du navbar*/
+}
+
+#menu {
+    display: none;
+}
+
+#navbar {
+    display: flex;
+    /* things to be in one line */
+    align-items: center;
+    /* use this property to align the items vertically*/
+    justify-content: center;
+    /* this aligns the flexible's items when the items don't 
+    use all available space on the main axis(horizontally)*/
+    color: white;
+
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#navbar li a:hover {
+    /* when we'll put the mouse on the word*/
+    color: rgb(255, 234, 0);
+
+}
+
+#search {
+    border-radius: 5px;
+    width: 330px;
+    height: 30px;
+}
+
+#loop {
+    height: 25px;
+    width: 23px;
+    padding-left: 5px;
+}
+
+#search_bar {
+    display: flex;
+    align-items: center;
+
+}
+
+footer {
+    background-color: coral;
+    margin-top: 10%;
+    bottom: 0px;
+    height: 40px;
+}
+
+#copyright {
+    height: 27px;
+    width: 23px;
+}
+
+#copy {
+    /*text-align: center;
+     padding-top: 5px;=>to be in center because we don't have flexible's items here*/
+    /*so we can't use thes properties: justify-content: center; 
+                                        align-content: center;  */
+    display: flex;
+    /* align-items: center; ne fonctionne pas!! */
+    justify-content: center;
+    padding-top: 5px;
+
+}
+
+.slider-1 {
+    /* display: flex; */
+    align-items: center;
+    background-color: brown;
+    display: flex;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    /* margin-right: 5%; */
+    /* margin-left: 5%; */
+    /* margin-top: 25% ; */
+    height: 460px;
+    border-radius: 20px;
+    opacity: 0.9;
+    /* position: relative;
+    overflow: hidden;
+    padding: 20px; */
+}
+
+.product-container {
+    display: flex;
+    padding: 0 10vw;
+    /* overflow-x: auto; */
+    /* scroll-behavior: smooth;  */
+}
+
+.product-container::-webkit-scrollbar {
+    display: none;
+
+}
+
+.product-card {
+    padding: 5px;
+    background-color: white;
+    flex: 0 0 auto;
+    width: 250px;
+    height: 400px;
+    margin-right: 40px;
+    border-radius: 10px;
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+}
+
+
+.product-container img {
+    width: 240px;
+
+    /* height: 400px; */
+}
+
+.product-image {
+    /* position: relative; */
+    /* width: 95%; */
+    height: 185px;
+    overflow: hidden;
+
+}
+
+
+
+.slider-1-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-btn {
+    /* bottom: 10px; */
+    /* left: 50%; */
+    padding: 10px;
+    /* width: 100px; */
+    text-transform: capitalize;
+    border: none;
+    /* outline: none; */
+    /* background: white; */
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+
+}
+
+.product-card:hover .card-btn {
+    /* position: absolute; */
+    transform: translateY(-120%);
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.card-btn:hover {
+    background: #009688;
+    color: #fff;
+}
+
+.product-info {
+    width: 100%;
+    /* height: 100%; */
+    padding-top: 10px;
+}
+
+.product-brand {
+    text-transform: uppercase;
+}
+
+.product-short-desc {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    /* width: 10vw; */
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background: linear-gradient(90deg,rgb(255, 255, 255, 0) 0%, #fff 100%); */
+    cursor: pointer;
+}
+
+.pre-btn {
+
+    margin-right: 2%;
+    right: 0;
+}
+
+.nxt-btn {
+    left: 0;
+    margin-left: 2%;
+
+}
+
+.product-category {
+    color: white;
+    /* margin-top: 26%; */
+}
+
+.welcome {
+    color: white;
+    text-align: center;
+    padding: 200px;
+
+}

@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login {
+    font-family: 'Odibee Sans';
+    /* font-weight: 400; */
+    font-size: 30px;
+    margin-bottom:1%;
+    text-align: center;
+}
+.singnin{
+    font-family: 'Odibee Sans';
+    /* font-weight: 400; */
+    font-size: 30px;
+    margin-bottom:1%;
+    text-align: center;
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: blanchedalmond; */
+    width: 70vw;
+    height: 80vh;
+    min-width: 829.531px;
+    min-height:252.790px ;
+    border-radius: 5%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.199);
+   
+}
+.formc .signinc{
+    width: 50%;
+    height: 50%;
+    font-family: 'Odibee Sans';
+    font-size: 30px;
+    text-align: center;
+}
+ 
+html{
+    background-image: url(https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    /* opacity: 0.1; */
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+   .inputlogin{
+    width: 30vw;
+    height: 2.5vw;
+    min-width: 50px;
+    min-height: 30px;
+    background: #C2ACAC;
+    border-radius: 35px;
+    display: flex;
+    padding : 0 2% 0 2% ;
+       align-items: center;
+       margin-bottom: 9px
+    }
+    .inputlogin input{
+        border: none;
+        outline: none;
+        background: #C2ACAC;
+        width: 80%;
+        line-height: 5px;
+    }
+    .btn{
+        border: none;
+        background: #C2ACAC;
+        border-radius: 35px;
+        width: 130px;
+        height: 42.43px;
+    }    
+    .btn:hover{
+        background: #f59898;
+     }
+     .gotosigninup {
+        position: absolute;
+        text-align: center;
+        font-weight: 2%;
+        }
+     .gotosigninup a {
+        color: #f59898;
+    }
+
+
+    .panels-container{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 50%;
+        height: 100%; 
+        background-color: #d13d3d;
+        border-radius: 5%;
+        overflow: hidden;
+        transition: 0.7s ease-in-out transform;
+    }
+  
+     .contanerpanel{
+        position: absolute;
+        /* left: 0; */
+        width: 200%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: url('images/LAPTOPTESTBACK1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 1;
+        transition: 0.7s ease-in-out transform;
+        /* transition: 0.7s ease-in-out transform; */
+    }
+    .contanerpanel ::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 140, 114);
+        opacity: 0.2;
+        z-index: -1;
+        border-radius: 5%;
+    }
+
+    .panel-left-panel .panel-right-panel{
+        
+        flex-basis: 50%;
+        text-align: center;
+        display: flex;
+    }
+    .donthave {
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+    }
+    .contanerpanel h1{
+        color: aliceblue;
+        /* margin: 5%; */
+        
+    }
+    .contanerpanel p{
+        color: rgb(255, 255, 255);
+        font-size :25px
+    }
+    .contanerpanel button{
+        border:none;
+        min-width: 70px;
+        min-height: 30px;
+        border-radius: 3px;
+        background: #daa8a8;
+        
+    }
+    .contanerpanel button:hover{
+        background-color: #ee6e6e;
+    } 
+    /* @media all and(max-width:480px) {
+        
+    } */

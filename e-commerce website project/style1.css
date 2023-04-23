@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Roboto:wght@400;500&display=swap');
+
+
+
+#logo
+{
+    border-radius: 15px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+h2
+{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.main
+{
+    width: 40%;
+    background-color: antiquewhite;
+    box-shadow: 1px 1px 30px silver;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+
+input
+{
+    margin: 10px;
+    padding: 1%;
+    width: 45%;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+button
+{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: whitesmoke;
+    width: 40%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    background-color: rgb(201, 245, 135);
+    cursor: pointer;
+}
+
+label
+{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: #7dc8fa;
+    width: 40%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+a
+{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(224, 91, 91);
+}
+
+p
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}

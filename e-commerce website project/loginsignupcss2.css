@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login {
+    font-family: 'Odibee Sans';
+    /* font-weight: 400; */
+    font-size: 30px;
+    margin-bottom:1%;
+    text-align: center;
+    color: azure;
+}
+
+.singnin{
+    font-family: 'Odibee Sans';
+    /* font-weight: 400; */
+    font-size: 30px;
+    margin-bottom:1%;
+    text-align: center;
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: blanchedalmond; */
+    width: 70vw;
+    height: 80vh;
+    min-width: 829.531px;
+    min-height:252.790px ;
+    border-radius: 5%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.199);
+   
+}
+.formc .signinc{
+    width: 50%;
+    height: 50%;
+    font-family: 'Odibee Sans';
+    font-size: 30px;
+    text-align: center;
+}
+
+
+html{
+    background-color:antiquewhite;
+    max-width: 480px;
+}
+body{
+        
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    max-width:480px;
+    min-height: 100vh;
+     background-image: url(C:\xampp\htdocs\PROJECT SIGN IN LOGIN\project\back_log_sign.jpg);
+
+}
+.inputlogin{
+    width: 45vw;
+    height: 2.5vw;
+    min-width: 50px;
+    min-height: 30px;
+    background: #C2ACAC;
+    border-radius: 35px;
+    display: flex;
+    padding : 0 2% 0 2% ;
+       align-items: center;
+       margin-bottom: 9px
+    }
+
+  
+    .inputlogin input{
+        border: none;
+        outline: none;
+        background: #C2ACAC;
+        width: 80%;
+        line-height: 5px;
+    }
+    .btn{
+        border: none;
+        background: #C2ACAC;
+        border-radius: 35px;
+        width: 130px;
+        height: 42.43px;
+    }    
+    .btn:hover{
+        background: #f59898;
+     }
+     .gotosigninup {
+        position: absolute;
+        text-align: center;
+        font-weight: 2%;
+        }
+     .gotosigninup a {
+        color: #f59898;
+    }
+
